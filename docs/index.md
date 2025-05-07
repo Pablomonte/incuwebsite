@@ -82,7 +82,6 @@ Complementando la aplicación móvil, LibreIncu integra Grafana para el almacena
 
 Este sistema permite no solo el monitoreo en tiempo real, sino también el análisis posterior para mejora continua del proceso de incubación, facilitando el aprendizaje colectivo y el intercambio de experiencias entre las diferentes organizaciones participantes.
 
-![][image3]
 
 ## **video:[Las voces de las comunidades que recibieron la LibreIncu](https://youtu.be/KnWVigydmrw)**
 
