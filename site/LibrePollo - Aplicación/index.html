@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="AlterMundi-CTO">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>LibrePollo - Aplicación - LibreIncu</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">LibreIncu</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../DocumentacionLibreIncu/" class="nav-link">Documentación LibreIncu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/" class="nav-link">Huevos Fértiles e Incubación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">LibrePollo - Aplicación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/" class="nav-link">Preguntas para las Buenas Prácticas de Incubación. </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../regosh/" class="nav-link">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../solucion%20de%20problemas/" class="nav-link">solucion de problemas</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/AlterMundi-MonitoreoyControl/website/edit/master/docs/LibrePollo - Aplicación.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#manual-de-usuario-aplicacion-librepollo" class="nav-link">Manual de Usuario - Aplicación LibrePollo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="manual-de-usuario-aplicacion-librepollo">Manual de Usuario - Aplicación LibrePollo</h1>
+<h3 id="introduccion">Introducción</h3>
+<p>Esta aplicación te permite controlar y monitorear tu LibreIncu de forma fácil y eficiente desde tu dispositivo móvil. Vas a poder supervisar la temperatura, humedad, rotación de bandejas y recibir notificaciones importantes sobre el proceso de incubación.</p>
+<h3 id="componentes-de-la-aplicacion">Componentes de la Aplicación</h3>
+<h4 id="pantalla-principal-inicio">Pantalla Principal (Inicio)</h4>
+<p>En la pantalla principal encontrás la información más importante de tu Incubadora:</p>
+<ul>
+<li><strong>Estado de Conexión WiFi</strong>: Muestra si la incubadora está conectada a internet</li>
+<li><strong>Estado de Rotación</strong>: Indica si el sistema de rotación está funcionando correctamente</li>
+<li><strong>Temperatura Actual</strong>: Muestra la temperatura en tiempo real con el siguiente código de colores:</li>
+<li>Verde: temperatura dentro del rango configurado</li>
+<li>Rojo: temperatura fuera del rango seguro</li>
+<li><strong>Humedad Actual</strong>: Muestra el nivel de humedad con el mismo sistema de colores</li>
+</ul>
+<center>
+  <img src="https://hackmd.io/_uploads/rJYhDsL9Jg.jpg" alt="photo" width="250px">
+</center>
+
+<h4 id="menu-de-navegacion">Menú de Navegación</h4>
+<p>En la parte inferior de la pantalla encontrás seis botones de navegación:</p>
+<ol>
+<li><strong>Inicio</strong>: Pantalla principal con información en tiempo real</li>
+<li><strong>Conexión</strong>: Configuración de WiFi</li>
+<li><strong>Configuraciones</strong>: Ajustes generales de la incubadora</li>
+<li><strong>Contador</strong>: Control de bandejas y ciclos de incubación</li>
+<li><strong>Rotación</strong>: Control manual de la rotación</li>
+<li><strong>Grafana</strong>: Visualización de datos históricos</li>
+</ol>
+<center>
+  <img src="https://hackmd.io/_uploads/ryY05sU9Jx.jpg" alt="photo" width="600px">
+</center>
+
+<h4 id="notificaciones-y-alertas">Notificaciones y Alertas</h4>
+<p>En la parte superior de la pantalla encontrás dos botones de navegación:</p>
+<ol>
+<li><strong>Notificaciones</strong>: Tutorial de suscripción al sistema de Notificaciones</li>
+<li><strong>Alertas</strong>: Muestra los llamados de atención más importantes</li>
+</ol>
+<center>
+  <img src="https://hackmd.io/_uploads/SkSfsoL51g.jpg" alt="photo" width="150px">
+</center>
+
+<h3 id="primera-conexion-y-configuraciones-basicas">Primera Conexión y Configuraciones Básicas</h3>
+<h4 id="instalacion">Instalación</h4>
+<ul>
+<li>La aplicación LibrePollo se instala a través de un archico APK</li>
+<li>En caso de ser necesario, permitir "Instalar sin Analizar"</li>
+</ul>
+<h4 id="conexion-con-libreincu">Conexión con LibreIncu</h4>
+<ul>
+<li>Conectá y encendé la incubadora</li>
+<li>Ingresá a las configuraciones de WiFi de tu teléfono</li>
+<li>Esperá que aparezca la red WiFi "incu-" (luego del guión cada Incubadora tiene un número único de identificación)</li>
+<li>Conectate desde tu celular con la contraseña: 12345678</li>
+<li>Ya podés abrir la aplicación y comenzar el proceso de configuración de los parámetros básicos de tu LibreIncu</li>
+</ul>
+<h4 id="configuracion-de-wifi">Configuracion de Wifi</h4>
+<p>Para que la LibreIncu pueda enviar notificaciones móviles a tu teléfono y guardar sus datos historicos en Grafana es necesario que la misma tenga conexión a una red WiFi con acceso a internet. ¿Como hacemos eso? Desde la aplicación LibrePollo! De la siguiente manera:</p>
+<ul>
+<li>Presiona el botón "Conexión" en el menú inferior</li>
+<li>Selecciona tu red WiFi de la lista</li>
+<li>Ingresa la contraseña</li>
+<li>Espera a que se establezca la conexión</li>
+<li>Verifica el estado de conexión en la pantalla principal</li>
+<li>Si la conexión se realizó correctamente, en la pantalla principal el estado de WiFi dirá "Conectado"</li>
+</ul>
+<h4 id="configuraciones-basicas">Configuraciones Básicas</h4>
+<p>En esta sección podés modificar los parámetros predeterminados de la LibreIncu de acuerdo a tus necesidades, para ello:</p>
+<ul>
+<li>Presionas el botón de editar que se encuentra al lado del campo que quieras cambiar</li>
+<li>Ingresas el nuevo valor que querés que tenga el campo seleccionado</li>
+<li>Pulsas "Aceptar"</li>
+<li>Listo, ahora tu LibreIncu está adaptada a tus parámetros de producción</li>
+</ul>
+<h4 id="suscripcion-a-sistema-de-notificaciones">Suscripción a Sistema de Notificaciones</h4>
+<p>Para poder recibir notificaciones móviles sobre el comportamiento de tu LibreIncu cuando no te encontrás cerca es necesario trabajar en conjunto con otra aplicacion, llamada NTFY. Para poder tener esta herramienta realiza lo siguiente:</p>
+<ul>
+<li>Busca "NTFY" en la tienda de aplicaciones de te teléfono (EJ: GooglePlay)</li>
+<li>Instala la aplicaion NTFY</li>
+<li>En la Pantalla Principal de tu aplicación LibrePollo, dirigite al ícono de mensaje que se encuentra en la barra superior</li>
+<li>Seguí el tutorial detallado que se explica en esa pantalla</li>
+</ul>
+<h3 id="funciones-de-la-aplicacion">Funciones de la Aplicación</h3>
+<h4 id="control-de-bandejas">Control de Bandejas</h4>
+<p>La sección "Contador" te permite gestionar hasta tres bandejas de incubación:</p>
+<ul>
+<li><strong>Bandeja Verde</strong>: Indica que la bandeja está vacía y lista para un nuevo ciclo</li>
+<li><strong>Bandeja Roja</strong>: Indica que la bandeja está en uso con un ciclo activo</li>
+</ul>
+<p>Para iniciar un nuevo ciclo:
+1. Selecciona una bandeja verde
+2. Confirma el inicio del ciclo</p>
+<p>Para finalizar un ciclo en curso:
+1. Selecciona una bandeja roja
+2. Confirma que deseas finalizar el ciclo
+3. La bandeja volverá a estado verde, lista para un nuevo ciclo</p>
+<h4 id="configuraciones-generales">Configuraciones Generales</h4>
+<p>Como ya vimos antes, en esta sección podes ajustar:</p>
+<ul>
+<li><strong>Nombre de la Incubadora</strong>: Identificador único de tu equipo</li>
+<li><strong>Temperaturas</strong>: Máxima y mínima permitidas</li>
+<li><strong>Humedad</strong>: Niveles máximo y mínimo deseados</li>
+<li><strong>Período de Incubación</strong>: Duración del ciclo en días</li>
+<li><strong>Intervalos de Rotación</strong>: Frecuencia de rotación de las bandejas</li>
+</ul>
+<h4 id="control-manual-de-rotacion">Control Manual de Rotación</h4>
+<p>La pantalla de rotación te permite:
+- Rotar las bandejas hacia arriba (↑)
+- Rotar las bandejas hacia abajo (↓)</p>
+<p>De esta forma podemos dejar las bandejas en la posición necesaria para realizar tareas de limpieza, carga y descarga, etc.</p>
+<h4 id="sistema-de-alertas">Sistema de Alertas</h4>
+<p>Cuando presionas el ícono de campana que se encuentra en la esquina superior derecha de la pantalla principal, la aplicación te mostrará alertas importantes sobre:
+- Problemas con el sensor de temperatura/humedad
+- Problemas de rotación
+- Problemas de conexión a internet</p>
+<h4 id="visualizacion-de-datos-grafana">Visualización de Datos (Grafana)</h4>
+<p>La sección Grafana te permite:
+- Ver gráficos históricos de temperatura y humedad
+- Analizar tendencias
+- Identificar patrones o problemas</p>
+<p>Recordá que para poder ver los datos guardados en Grafana tu teléfono tiene que estar conectado a una Red WiFi con acceso a internet</p>
+<h3 id="solucion-de-problemas-comunes">Solución de Problemas Comunes</h3>
+<h4 id="la-aplicacion-muestra-verifique-conexion-con-incubadora">La aplicación muestra "Verifique conexión con incubadora"</h4>
+<ol>
+<li>Verifica que la incubadora esté encendida</li>
+<li>Asegúrate de que estés conectado a la Red WiFi que tiene el nombre de tu incubadora (ModoAP)</li>
+<li>Presiona "Reintentar"</li>
+<li>Si el problema persiste, revisa la configuración WiFi</li>
+</ol>
+<h4 id="problemas-de-rotacion">Problemas de Rotación</h4>
+<p>Si ves una alerta de rotación:
+1. Verifica que no haya obstáculos físicos
+2. Usa los controles manuales de rotación para probar el sistema
+3. Si el problema persiste:
+        - Revisá la posición de la bandeja y los sensores Reed
+        - Verificá las conexiones del motor
+        - Controlá que las partes (cinta polea y motor) estén bien asociadas.</p>
+<h4 id="alertas-de-temperatura-o-humedad">Alertas de Temperatura o Humedad</h4>
+<p>Si recibis alertas constantes:
+1. Verifica que los rangos configurados sean correctos
+2. Asegurate de que el sensor no se encuentre obstruído
+3. Comproba el funcionamiento del sistema de ventilación</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

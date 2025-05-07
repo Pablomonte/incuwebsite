@@ -8,7 +8,7 @@
         <meta name="author" content="AlterMundi-CTO">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>solucion de problemas - LibreIncu</title>
+        <title>Preguntas para las Buenas Prácticas de Incubación.  - LibreIncu</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -47,13 +47,13 @@
                                 <a href="../LibrePollo%20-%20Aplicaci%C3%B3n/" class="nav-link">LibrePollo - Aplicación</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/" class="nav-link">Preguntas para las Buenas Prácticas de Incubación. </a>
+                                <a href="./" class="nav-link active" aria-current="page">Preguntas para las Buenas Prácticas de Incubación. </a>
                             </li>
                             <li class="nav-item">
                                 <a href="../regosh/" class="nav-link">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">solucion de problemas</a>
+                                <a href="../solucion%20de%20problemas/" class="nav-link">solucion de problemas</a>
                             </li>
                         </ul>
 
@@ -64,17 +64,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../regosh/" class="nav-link">
+                                <a rel="prev" href="../LibrePollo%20-%20Aplicaci%C3%B3n/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../regosh/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/AlterMundi-MonitoreoyControl/website/edit/master/docs/solucion de problemas.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/AlterMundi-MonitoreoyControl/website/edit/master/docs/Preguntas para las Buenas Prácticas de Incubación.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -94,12 +94,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#diagnostico-y-solucion-de-problemas-libreincu" class="nav-link">Diagnostico y solución de problemas Libreincu</a>
+            <li class="nav-item" data-bs-level="1"><a href="#guia-de-preguntas-para-buenas-practicas-de-incubacuion" class="nav-link">Guía de preguntas para Buenas Prácticas de Incubacuíón</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#problema-baja-humedad" class="nav-link">Problema: baja humedad</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -107,25 +103,87 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="diagnostico-y-solucion-de-problemas-libreincu">Diagnostico y solución de problemas Libreincu</h1>
-<h2 id="problema-baja-humedad">Problema: baja humedad</h2>
-<h3 id="a-no-se-escucha-el-sonido-de-la-bomba">a) No se escucha el sonido de la bomba</h3>
-<p>Si la bomba no enciende es un problema eléctrico o mecánico. </p>
-<p>Verificar que la fuente este encendida y entregando 12V.
-Utilice un multímetro:
-    1. coloque el multimetro en posición 20 v continua
-    <img alt="imagen" src="https://hackmd.io/_uploads/H1HvWHi2yx.png" />
-    2. coloque la punta negra en el cuarto terminal de la fuente donde salen cables negros. <img alt="imagen" src="https://hackmd.io/_uploads/S1CY-Hohyg.png" />
-    3. Coloque la punta roja en el terminal del medio (5) de la caja azul que tiene cables. <img alt="imagen" src="https://hackmd.io/_uploads/Bk4RWBsn1l.png" />
-    4. El multímetro deberá indicar 12 v de lo contrario existe un problema de cableado o la fuente no funciona. 
-    <img alt="imagen" src="https://hackmd.io/_uploads/BJtezroh1e.png" />
-    5. Verificar que en el plazo de 5 minutos el rele se active encendiendo una de las luces rojas. 
-    <img alt="imagen" src="https://hackmd.io/_uploads/Bk_BfBjnkx.png" />
-    6. Cada vez que se activa el rele verificar que el pin de la izquierda se pone en 12 V. Coloque la punta roja sobre el borne que esta a la izquieda del borne del medio (4) y deje la punta negra en la posición indicada en el punto dos. Verificar que esta en 0V hasta que se prende la luz y mientras la luz esta encendida la tensión es 12 V. </p>
-<p>En caso de que 6 no se cumpla: apagar la incubadora. Quitar el cable del terminal 4 y colocarlo en el 1, quitar el cable de  5  y colocarlo en 2. Quite el cable de in1 y colóquelo en in2 la siguiente figura muestra como queda el cableado final. 
- <img alt="imagen" src="https://hackmd.io/_uploads/H1biGrihJl.png" /></p>
-<h3 id="b-la-bomba-se-enciende-cada-dos-minutos-pero-no-sale-agua">b) La bomba se enciende (cada dos minutos) pero no sale agua</h3>
-<p>Esto indica un problema en el recorrido del agua. Verificar que tenga agua el reservorio, que la manguera no este obstruida o ahorcada y que el pico no este tapado.</p></div>
+<h1 id="guia-de-preguntas-para-buenas-practicas-de-incubacuion">Guía de preguntas para Buenas Prácticas de Incubacuíón</h1>
+<p>MANEJO DE REPRODUCTORES, huevos fértiles e incubación:</p>
+<p>🐣 Gallinero y ambiente:</p>
+<pre><code>• ¿Cuál es la relación macho:hembra en su lote reproductor? 
+• ¿Qué edad tienen las aves reproductoras? 
+• ¿Cómo controla la temperatura y ventilación en el gallinero? (Están muy encerradas? O a pleno sol) 
+• ¿Cuáles son las instalaciones para que pongan huevos? ¿Son limpias y ordenadas?
+• ¿Con qué frecuencia limpia los gallineros?
+</code></pre>
+<p>🐣Alimentación:</p>
+<pre><code>• ¿Qué tipo de dieta suministra a los reproductores? ¿Cómo asegura el aporte adecuado de vitaminas y minerales (Calcio sobre todo)? ¿Están demasiado gordas o demasiado flacas?
+</code></pre>
+<p>🐣Sanidad:</p>
+<pre><code>• ¿Ha observado signos de enfermedad en el lote reproductor? 
+• ¿Realiza tratamientos contra parásitos internos/externos?
+</code></pre>
+<p>🐣RECOLECCIÓN Y MANEJO DE HUEVOS</p>
+<p>Recolección:</p>
+<pre><code>• ¿Con qué frecuencia recolecta los huevos?
+• ¿Qué porcentaje aproximado de huevos encuentra en el piso?
+</code></pre>
+<p>🐣Almacenamiento pre-incubación:</p>
+<pre><code>• ¿Cuánto tiempo almacena los huevos antes de incubarlos? 
+• ¿A qué temperatura y humedad los almacena? 
+• ¿Cómo posiciona los huevos durante el almacenamiento? 
+• ¿Como los transporta?
+</code></pre>
+<p>🐣Selección:</p>
+<pre><code>• ¿Qué criterios utiliza para seleccionar huevos fértiles? 
+• ¿Descarta huevos con formas irregulares, grietas o suciedad? 
+• ¿Qué porcentaje de huevos suele descartar antes de incubar?
+</code></pre>
+<p>🐣INCUBACIÓN:</p>
+<p>Parámetros de incubación:</p>
+<pre><code>• ¿Hubo problemas de  temperatura en la incubadora? 
+• ¿Hubo  problemas de humedad durante las diferentes etapas? 
+• ¿Hubo problemas con el ventilador? 
+• ¿Hubo problemas con la rotación? 
+• ¿Realiza ovoscopía? ¿Que día? 
+• ¿Hubo cortes de luz?
+</code></pre>
+<p>🐣Transferencia a nacedora:</p>
+<pre><code>• ¿En qué día trasladó los huevos a la nacedora?
+</code></pre>
+<p>🐣Nacimiento:</p>
+<pre><code>• ¿Aumentó la humedad durante el nacimiento?  
+• ¿Cuál es la duración promedio del proceso de eclosión (desde que nace el primero hasta el último que espera)?
+• ¿ A los cuantos días comenzó y terminó el nacimiento?
+</code></pre>
+<p>🐣EVALUACIÓN POST-NACIMIENTO</p>
+<p>Resultados:</p>
+<pre><code>• ¿Cuál es su porcentaje de nacimientos sobre huevos fértiles? 
+• ¿Cuál es su tasa de mortalidad embrionaria temprana, media y tardía? ( O sea, hay huevos que no nacieron y estaban muy formados o poco formados)
+• ¿Qué porcentaje de pollitos nacen con problemas o malformaciones?
+</code></pre>
+<p>🐣Análisis:</p>
+<pre><code>• ¿Realiza necropsia de embriones no eclosionados? ( Rompe los huevos que no nacieron?)
+</code></pre>
+<p>🐣Calidad de los pollitos:</p>
+<pre><code>• ¿Cómo evalúa la calidad de los pollitos nacidos? 
+• ¿Observa signos de deshidratación o problemas en las patas al poco tiempo de nacimiento? 
+• ¿Se mueren muchos pollitos en las primeras horas?
+</code></pre>
+<p>**Ejemplo práctico: **</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/HJxBKXUenJx.png" /></p>
+<p>🐤 Si ven esta tablita podemos suponer (porque es difícil de comprobar) que: </p>
+<p>🥚 Si el porcentaje de huevos descartados por ovoscopio es mayor al 20% (en este caso más del 30) tenemos que pensar que los 19 huevos descartados por ovoscopio no estaban fertilizados… </p>
+<p>¿ Por qué?  (Es una pregunta que debería pensar el dueñ@ del gallinero primero.. después los que seleccionaron los huevos). </p>
+<p>🐥 El nacimiento fue, dentro de todo,normal (ni excelente ni malo). Casi el 70% de eclosión sobre los huevos que pasaron a nacedora...   </p>
+<p>¿Qué pasó con los 12 huevos que no nacieron? </p>
+<ul>
+<li>5 no tenían ningún desarrollo </li>
+<li>
+<p>1 podrido mal. (¿le explotó a Darío en la cara?) (también debería haberse descartado por ovoscopio)..  Estos primeros 6, podrían  haber sido descartados por ovoscopio; y eso aumentaría al 81 %  porcentaje de eclosión). </p>
+</li>
+<li>
+<p>4 embriones muy formados (grandes) pero solo 2 rompieron cáscara y no pudieron nacer (Falta de rotación, o falta de humedad o la misma naturaleza)</p>
+</li>
+<li>2 con el embrión pequeño (Falta de calor o problema del huevo)</li>
+</ul>
+<p><strong>Conclusión</strong> : Hay que revisar el proceso de los huevos fértiles!!!</p></div>
             </div>
         </div>
 
