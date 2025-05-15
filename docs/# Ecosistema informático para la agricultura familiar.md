@@ -97,15 +97,15 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 ```mermaid
 graph TD
   A[Sensor Node - MeshStatic] -- LoRa --> B[Gateway LibreRouter / BPI-R4]
-  
   B -- MQTT --> C[Mqtt Broker en la Nube]
-  D[Grafana] -->  C[Mqtt Broker en la Nube]
+  C[Mqtt Broker en la Nube] --> D[Grafana] 
   E[Sensor Node - esp32] -- WiFi --> B[Gateway LibreRouter / BPI-R4]
   F[LLM-automatic recomendation server]  -->  C[Mqtt Broker en la Nube]
   G[End User Android app] -->  C[Mqtt Broker en la Nube]
   H[Odoo]  -->  C[Mqtt Broker en la Nube]
   H[Odoo]  -->  F[LLM-automatic recomendation server]
-  H[Odoo]  -->  I[Chasqui] 
+  H[Odoo]  -->  I[Chasqui]
+  D[Grafana] -->  F[LLM-automatic recomendation server]  
 ```
 
 ---
