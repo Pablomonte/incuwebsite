@@ -98,10 +98,13 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 graph TD
   A[Sensor Node - MeshStatic] -- LoRa --> B[Gateway LibreRouter / BPI-R4]
   
-  B -- MQTT --> C[Broker en la Nube]
-  D[Grafana] -->  C[Broker en la Nube]
+  B -- MQTT --> C[Mqtt Broker en la Nube]
+  D[Grafana] -->  C[Mqtt Broker en la Nube]
   E[Sensor Node - esp32] -- WiFi --> B[Gateway LibreRouter / BPI-R4]
-
+  F[LLM-automatic recomendation server]  -->  C[Mqtt Broker en la Nube]
+  G[End User Android app] -->  C[Mqtt Broker en la Nube]
+  H[Odoo]  -->  C[Mqtt Broker en la Nube]
+  H[Odoo]  -->  F[LLM-automatic recomendation server]
 ```
 
 ---
