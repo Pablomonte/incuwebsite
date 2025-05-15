@@ -105,6 +105,7 @@ graph TD
   G[End User Android app] -->  C[Mqtt Broker en la Nube]
   H[Odoo]  -->  C[Mqtt Broker en la Nube]
   H[Odoo]  -->  F[LLM-automatic recomendation server]
+  H[Odoo]  -->  I[Chasqui] 
 ```
 
 ---
