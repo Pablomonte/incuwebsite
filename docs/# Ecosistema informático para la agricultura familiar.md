@@ -11,7 +11,7 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 
 ## Componentes Principales
 
-### 1. Nodo IoT midición o actuación
+### 1. Nodo IoT medición o actuación
 
 ### 1.a Sensor Node - MeshStatic
 
