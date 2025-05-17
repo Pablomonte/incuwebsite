@@ -58,6 +58,9 @@ nav:
 plugins:
   - search
   - social
+  - plantuml-markdown:
+      server_url: https://www.plantuml.com/plantuml
+      format: svg
 
 # Extensiones Markdown
 markdown_extensions:
