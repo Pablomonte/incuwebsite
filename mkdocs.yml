@@ -1,19 +1,65 @@
-site_name: IncuWebsite
-repo_url: 'https://github.com/Pablomonte/incuwebsite'
+site_name: LibreIncu
 site_description: 'Documentación LibreIncu'
 site_author: 'AlterMundi-CTO'
 docs_dir: docs/
+repo_url: 'https://github.com/AlterMundi-MonitoreoyControl/website'
+repo_name: 'AlterMundi/LibreIncu'
+edit_uri: 'edit/main/docs/'
 
+# Configuración de idioma
 theme: 
-  
   name: material
-  
+  language: es
   palette:
-    scheme: slate
-    primary: green 
+    # Modo oscuro (por defecto)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+    # Modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
   # favicon: img/favicon.ico
   # logo: img/logo.png
 
+# Estructura de navegación
+nav:
+  - Inicio: index.md
+  - Manuales de Usuario:
+    - Manual Básico: 'Manual básico de incubadoras LibrePollo.md'
+    - Aplicación LibrePollo: 'LibrePollo - Aplicación.md'
+  - Guías de Incubación:
+    - Huevos Fértiles e Incubación: 'Huevos Fértiles e Incubación.md'
+    - Buenas Prácticas: 'Preguntas para las Buenas Prácticas de Incubación.md'
+  - Solución de Problemas: 'solucion de problemas.md'
+  - Información Técnica:
+    - Ecosistema IoT: '# Ecosistema informático para la agricultura familiar.md'
+
+# Plugins útiles
+plugins:
+  - search
+  - social
+
+# Extensiones Markdown
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -21,10 +67,26 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  #- pymdownx.highlight:
-  #    anchor_linenums: true
-  #    line_spans: __span
-  #    pygments_lang_class: true
-  #- pymdownx.inlinehilite
-  #- pymdownx.snippets
-  #- pymdownx.superfences  
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+# Configuración extra
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AlterMundi-MonitoreoyControl
+    # Puedes agregar más redes sociales aquí
