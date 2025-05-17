@@ -5,14 +5,15 @@ site_author: 'AlterMundi-CTO'
 docs_dir: docs/
 
 theme: 
-  # favicon: img/favicon.ico
+  
   name: material
-  # logo: img/logo.png
+  
   palette:
     scheme: slate
     primary: green 
-    
-     
+  # favicon: img/favicon.ico
+  # logo: img/logo.png
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -20,10 +21,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences  
+  #- pymdownx.highlight:
+  #    anchor_linenums: true
+  #    line_spans: __span
+  #    pygments_lang_class: true
+  #- pymdownx.inlinehilite
+  #- pymdownx.snippets
+  #- pymdownx.superfences  
