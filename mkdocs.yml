@@ -2,7 +2,7 @@ site_name: LibreIncu
 site_description: 'Documentación LibreIncu'
 site_author: 'AlterMundi-CTO'
 docs_dir: docs/
-repo_url: 'https://github.com/AlterMundi-MonitoreoyControl/website'
+site_url: 'https://github.com/Pablomonte/incuwebsite'
 repo_name: 'AlterMundi/LibreIncu'
 edit_uri: 'edit/main/docs/'
 
