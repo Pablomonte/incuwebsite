@@ -1,12 +1,13 @@
-site_name: LibreIncu
+site_name: IncuWebsite
+repo_url: 'https://github.com/Pablomonte/incuwebsite'
 site_description: 'Documentación LibreIncu'
 site_author: 'AlterMundi-CTO'
 docs_dir: docs/
-repo_url: 'https://github.com/AlterMundi-MonitoreoyControl/website'
+
 theme: 
-  favicon: img/favicon.ico
+  # favicon: img/favicon.ico
   name: material
-  logo: img/logo.png
+  # logo: img/logo.png
   palette:
     scheme: slate
     primary: green 
