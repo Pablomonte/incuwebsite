@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="AlterMundi-CTO" /><link rel="canonical" href="https://github.com/Pablomonte/incuwebsite/Ecosistema%20inform%C3%A1tico%20para%20la%20agricultura%20familiar/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Ecosistema IoT - IncuWebsite</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ecosistema IoT";
+        var mkdocs_page_input_path = "Ecosistema inform\u00e1tico para la agricultura familiar.md";
+        var mkdocs_page_url = "/Pablomonte/incuwebsite/Ecosistema%20inform%C3%A1tico%20para%20la%20agricultura%20familiar/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> IncuWebsite
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Manuales de Usuario</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Manual%20b%C3%A1sico%20de%20incubadoras%20LibrePollo/">Manual Básico</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../LibrePollo%20-%20Aplicaci%C3%B3n/">Aplicación LibrePollo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guías de Incubación</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/">Huevos Fértiles e Incubación</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/">Buenas Prácticas</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../solucion%20de%20problemas/">Solución de Problemas</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Información Técnica</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Ecosistema IoT</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#componentes-principales">Componentes Principales</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-nodo-iot-medicion-o-actuacion">1. Nodo IoT medición o actuación</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#1a-sensor-node-meshstatic">1.a Sensor Node - MeshStatic</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#1b-sensor-node-esp32-now">1.b Sensor Node - ESP32 Now</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-gateway-rural-librerouter-lora-usb-o-meshstick">2. Gateway Rural (LibreRouter + LoRa USB o MESHSTICK)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-broker-mqtt-en-la-nube">3. Broker MQTT en la Nube</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-cliente-de-datos-visualizacion">4. Cliente de Datos + Visualización</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#diagrama-general">Diagrama General</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alternativas-y-opcionales">Alternativas y Opcionales</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pendientes">Pendientes</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">IncuWebsite</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Información Técnica &raquo;</li>
+      <li>Ecosistema IoT</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="edit/main/docs/Ecosistema informático para la agricultura familiar.md">Edit on AlterMundi/LibreIncu</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ecosistema-informatico-para-la-agricultura-familiar">Ecosistema informático para la agricultura familiar<a class="headerlink" href="#ecosistema-informatico-para-la-agricultura-familiar" title="Permanent link">&para;</a></h1>
+<p>Una arquitectura IoT para Zonas Rurales con Libremesh y MeshStatic (LoRa)</p>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
+<p>Diseñar una arquitectura de hardware y software para redes de sensores IoT en zonas rurales con vegetación densa, utilizando tecnologías de bajo consumo y largo alcance como LoRa, y conectividad comunitaria basada en Libremesh y LibreRouter.</p>
+<hr />
+<h2 id="componentes-principales">Componentes Principales<a class="headerlink" href="#componentes-principales" title="Permanent link">&para;</a></h2>
+<h3 id="1-nodo-iot-medicion-o-actuacion">1. Nodo IoT medición o actuación<a class="headerlink" href="#1-nodo-iot-medicion-o-actuacion" title="Permanent link">&para;</a></h3>
+<h3 id="1a-sensor-node-meshstatic">1.a Sensor Node - MeshStatic<a class="headerlink" href="#1a-sensor-node-meshstatic" title="Permanent link">&para;</a></h3>
+<p><strong>Hardware:</strong></p>
+<ul>
+<li>Microcontrolador: ESP32</li>
+<li>Módulo LoRa: SX1278 (433 MHz) o SX1262 (868 MHz) sería preferible la radio de 433 pues podria tener mas potencial de alcance y penetración.&#x20;</li>
+<li>Sensores: temperatura, humedad, CO₂, humedad del suelo, etc.</li>
+<li>Actuadores: relays y triac para controlar luces, ventilación y calefacción</li>
+<li>Fuente de energía: 220/110, (batería recargable + panel solar opcional)</li>
+<li>Antena: Yagi o colineal externa (alta ganancia)</li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li>Firmware propio (Arduino + meshtatic)</li>
+<li>Transmisión y recepción de datos vía LoRa/wifi&#x20;</li>
+</ul>
+<h3 id="1b-sensor-node-esp32-now">1.b Sensor Node - ESP32 Now<a class="headerlink" href="#1b-sensor-node-esp32-now" title="Permanent link">&para;</a></h3>
+<p><strong>Hardware:</strong></p>
+<ul>
+<li>Microcontrolador: ESP32 en placa olivia control&#x20;</li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li>Firmware propio (Arduino + meshtatic)</li>
+<li>esp now (p2p de expressive)</li>
+</ul>
+<hr />
+<h3 id="2-gateway-rural-librerouter-lora-usb-o-meshstick">2. Gateway Rural (LibreRouter + LoRa USB o MESHSTICK)<a class="headerlink" href="#2-gateway-rural-librerouter-lora-usb-o-meshstick" title="Permanent link">&para;</a></h3>
+<p><strong>Hardware:</strong></p>
+<ul>
+<li>LibreRouter (OpenWrt/Libremesh)</li>
+<li>
+<p>Opciones de módulo LoRa:</p>
+</li>
+<li>
+<p>USB LoRa (ej. EBYTE, RAK WisLink, SX1262)</p>
+</li>
+<li><a href="https://github.com/markbirss/MESHSTICK">MESHSTICK</a></li>
+<li><a href="https://www.waveshare.com/core1262-868m.htm">Core1262-868M de Waveshare</a></li>
+<li>Alternativa: <a href="https://forum.openwrt.org/t/meshtastic-running-on-bananapi-bpi-r4-and-openwrt-one/222812">Banana Pi BPI-R4 con OpenWrt y Meshtastic</a></li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li>OpenWrt</li>
+<li>Libremesh&#x20;</li>
+<li>
+<p>Broker local: Mosquitto MQTT&#x20;</p>
+</li>
+<li>
+<p>Organización por topicos: <code>/localidad/nodo/tipo</code></p>
+</li>
+<li>en puente con broker en la nube</li>
+<li>
+<p>Script puente:</p>
+</li>
+<li>
+<p>Escucha por serial/USB LoRa</p>
+</li>
+<li>Publica en broker local</li>
+<li>Sincroniza con broker en la nube si hay conexión</li>
+</ul>
+<hr />
+<h3 id="3-broker-mqtt-en-la-nube">3. Broker MQTT en la Nube<a class="headerlink" href="#3-broker-mqtt-en-la-nube" title="Permanent link">&para;</a></h3>
+<p><strong>Software:</strong></p>
+<ul>
+<li>Mosquitto / EMQX / HiveMQ en VPS</li>
+<li>Organización por topicos: <code>/localidad/nodo/tipo</code></li>
+<li>Conexión segura vía TLS</li>
+<li>Los miembros de cada localidad pueden suscribirse a sus datos</li>
+</ul>
+<hr />
+<h3 id="4-cliente-de-datos-visualizacion">4. Cliente de Datos + Visualización<a class="headerlink" href="#4-cliente-de-datos-visualizacion" title="Permanent link">&para;</a></h3>
+<p><strong>Software:</strong></p>
+<ul>
+<li>Cliente MQTT (Python con <code>paho-mqtt</code> o ZeroMQ client)</li>
+<li>Base de datos: InfluxDB o TimescaleDB</li>
+<li>Visualización: Grafana</li>
+<li>Alertas opcionales vía Telegram/Email (Node-RED)</li>
+</ul>
+<hr />
+<h2 id="diagrama-general">Diagrama General<a class="headerlink" href="#diagrama-general" title="Permanent link">&para;</a></h2>
+<pre><code class="language-mermaid">graph TD
+  A[Sensor Node - MeshStatic] -- LoRa --&gt; B[Gateway LibreRouter / BPI-R4]
+  B -- MQTT --&gt; C[Mqtt Broker en la Nube]
+  C[Mqtt Broker en la Nube] --&gt; D[Grafana] 
+  E[Sensor Node - esp32] -- WiFi --&gt; B[Gateway LibreRouter / BPI-R4]
+  F[LLM-automatic recomendation server]  --&gt;  C[Mqtt Broker en la Nube]
+  G[End User Android app] --&gt;  C[Mqtt Broker en la Nube]
+  H[Odoo]  --&gt;  C[Mqtt Broker en la Nube]
+  H[Odoo]  --&gt;  F[LLM-automatic recomendation server]
+  H[Odoo]  --&gt;  I[Chasqui]
+  D[Grafana] --&gt;  F[LLM-automatic recomendation server]  
+</code></pre>
+<hr />
+<h2 id="alternativas-y-opcionales">Alternativas y Opcionales<a class="headerlink" href="#alternativas-y-opcionales" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Uso de ZeroMQ en vez de MQTT o en combinación con. ZeroMq parece tener la posiblidad de funcionar p2p.</li>
+<li>Heartbeat del nodo</li>
+<li>Seguridad: TLS, certificados, autenticación, en especial para enviar comandos.&#x20;</li>
+<li>Gateway con watchdog y logging</li>
+</ul>
+<hr />
+<h2 id="pendientes">Pendientes<a class="headerlink" href="#pendientes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Costos estimados por nodo y por gateway</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../solucion%20de%20problemas/" class="btn btn-neutral float-left" title="Solución de Problemas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../solucion%20de%20problemas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
