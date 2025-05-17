@@ -1,8 +1,8 @@
-site_name: LibreIncu
+site_name: IncuWebsite
+site_url: 'https://github.com/Pablomonte/incuwebsite'
 site_description: 'Documentación LibreIncu'
 site_author: 'AlterMundi-CTO'
 docs_dir: docs/
-site_url: 'https://github.com/Pablomonte/incuwebsite'
 repo_name: 'AlterMundi/LibreIncu'
 edit_uri: 'edit/main/docs/'
 
@@ -52,7 +52,7 @@ nav:
     - Buenas Prácticas: 'Preguntas para las Buenas Prácticas de Incubación.md'
   - Solución de Problemas: 'solucion de problemas.md'
   - Información Técnica:
-    - Ecosistema IoT: '# Ecosistema informático para la agricultura familiar.md'
+    - Ecosistema IoT: 'Ecosistema informático para la agricultura familiar.md'
 
 # Plugins útiles
 plugins:
