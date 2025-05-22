@@ -81,7 +81,7 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 
 ---
 
-### 4. Cliente de Datos + Visualización
+### 4. Cliente de Datos + Visualización (Android app)
 
 **Software:**
 
