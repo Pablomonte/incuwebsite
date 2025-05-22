@@ -81,7 +81,7 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 
 ---
 
-### 4. Cliente de Datos + Visualización
+### 4. Cliente de Datos + Visualización (Android app)
 
 **Software:**
 
@@ -89,6 +89,16 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 * Base de datos: InfluxDB o TimescaleDB
 * Visualización: Grafana
 * Alertas opcionales vía Telegram/Email (Node-RED)
+
+---
+
+### 5. Odoo
+
+**Software:**
+
+* Software para gestion contable y ventas con chasqui 
+* Integracion con app para gestion de producción (reportes de producción, reportes de insumos)
+* La app se conectará a una api rest de odoo para generar registros
 
 ---
 
