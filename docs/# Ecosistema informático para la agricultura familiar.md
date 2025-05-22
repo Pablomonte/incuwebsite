@@ -92,6 +92,16 @@ Diseñar una arquitectura de hardware y software para redes de sensores IoT en z
 
 ---
 
+### 5. Odoo
+
+**Software:**
+
+* Software para gestion contable y ventas con chasqui 
+* Integracion con app para gestion de producción (reportes de producción, reportes de insumos)
+* La app se conectará a una api rest de odoo para generar registros
+
+---
+
 ## Diagrama General
 
 ```mermaid
