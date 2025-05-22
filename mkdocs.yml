@@ -38,8 +38,8 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
-  # favicon: img/favicon.ico
-  # logo: img/logo.png
+    #favicon: img/favicon.ico
+    #logo: img/logo.png
 
 # Estructura de navegación
 nav:
@@ -52,15 +52,13 @@ nav:
     - Buenas Prácticas: 'Preguntas para las Buenas Prácticas de Incubación.md'
   - Solución de Problemas: 'solucion de problemas.md'
   - Información Técnica:
+    - Regosh: regosh.md
     - Ecosistema IoT: 'Ecosistema informático para la agricultura familiar.md'
 
 # Plugins útiles
 plugins:
   - search
   - social
-  - plantuml-markdown:
-      server_url: https://www.plantuml.com/plantuml
-      format: svg
 
 # Extensiones Markdown
 markdown_extensions:

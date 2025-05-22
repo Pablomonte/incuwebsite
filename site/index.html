@@ -1,135 +1,840 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
         <meta name="description" content="Documentación LibreIncu">
+      
+      
         <meta name="author" content="AlterMundi-CTO">
+      
+      
+        <link rel="canonical" href="https://github.com/Pablomonte/incuwebsite/">
+      
+      
+      
+        <link rel="next" href="Manual%20b%C3%A1sico%20de%20incubadoras%20LibrePollo/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>IncuWebsite</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>LibreIncu</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">LibreIncu</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="DocumentacionLibreIncu/" class="nav-link">Documentación LibreIncu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/" class="nav-link">Huevos Fértiles e Incubación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="LibrePollo%20-%20Aplicaci%C3%B3n/" class="nav-link">LibrePollo - Aplicación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/" class="nav-link">Preguntas para las Buenas Prácticas de Incubación. </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="regosh/" class="nav-link">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="solucion%20de%20problemas/" class="nav-link">solucion de problemas</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="DocumentacionLibreIncu/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/AlterMundi-MonitoreoyControl/website/edit/master/docs/index.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#libreincu-tecnologia-libre-para-la-soberania-alimentaria-en-la-afci" class="nav-link">LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#introduccion-al-proyecto" class="nav-link">Introducción al Proyecto</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#videoequipo-de-desarrollo-libreincu-sistemas-de-monitoreo-y-control" class="nav-link">video:Equipo de Desarrollo LibreIncu. Sistemas de Monitoreo y Control</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#hardware" class="nav-link">Hardware</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#software" class="nav-link">Software</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#videolas-voces-de-las-comunidades-que-recibieron-la-libreincu" class="nav-link">video:Las voces de las comunidades que recibieron la LibreIncu</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#impactos-positivos" class="nav-link">Impactos positivos:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<h1 id="libreincu-tecnologia-libre-para-la-soberania-alimentaria-en-la-afci"><strong>LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</strong></h1>
-<p>video: <a href="https://www.youtube.com/watch?v=WrC1Y-ACtMoç">Incubadoras AlterMundi</a></p>
-<h2 id="introduccion-al-proyecto"><strong>Introducción al Proyecto</strong></h2>
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="IncuWebsite" >
+      
+        <meta  property="og:description"  content="Documentación LibreIncu" >
+      
+        <meta  property="og:image"  content="https://github.com/Pablomonte/incuwebsite/assets/images/social/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://github.com/Pablomonte/incuwebsite/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="IncuWebsite" >
+      
+        <meta  name="twitter:description"  content="Documentación LibreIncu" >
+      
+        <meta  name="twitter:image"  content="https://github.com/Pablomonte/incuwebsite/assets/images/social/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#libreincu-tecnologia-libre-para-la-soberania-alimentaria-en-la-afci" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="." title="IncuWebsite" class="md-header__button md-logo" aria-label="IncuWebsite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IncuWebsite
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inicio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Manual%20b%C3%A1sico%20de%20incubadoras%20LibrePollo/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Manuales de Usuario
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guías de Incubación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="solucion%20de%20problemas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Solución de Problemas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="regosh/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Información Técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="IncuWebsite" class="md-nav__button md-logo" aria-label="IncuWebsite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IncuWebsite
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción al Proyecto
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manuales de Usuario
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Manuales de Usuario
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Manual%20b%C3%A1sico%20de%20incubadoras%20LibrePollo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manual Básico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LibrePollo%20-%20Aplicaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicación LibrePollo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guías de Incubación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guías de Incubación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Huevos%20F%C3%A9rtiles%20e%20Incubaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Huevos Fértiles e Incubación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Preguntas%20para%20las%20Buenas%20Pr%C3%A1cticas%20de%20Incubaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buenas Prácticas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="solucion%20de%20problemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Solución de Problemas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Información Técnica
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Información Técnica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regosh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regosh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ecosistema%20inform%C3%A1tico%20para%20la%20agricultura%20familiar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ecosistema IoT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción al Proyecto
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="libreincu-tecnologia-libre-para-la-soberania-alimentaria-en-la-afci"><strong>LibreIncu: Tecnología Libre para la Soberanía Alimentaria en la AFCI</strong><a class="headerlink" href="#libreincu-tecnologia-libre-para-la-soberania-alimentaria-en-la-afci" title="Permanent link">&para;</a></h1>
+<p><a href="https://www.youtube.com/watch?v=WrC1Y-ACtMoç"><img alt="Equipo de Desarrollo LibreIncu. Sistemas de Monitoreo y Control" src="https://www.youtube.com/watch?v=WrC1Y-ACtMoç/0.jpg" /></a></p>
+<h2 id="introduccion-al-proyecto"><strong>Introducción al Proyecto</strong><a class="headerlink" href="#introduccion-al-proyecto" title="Permanent link">&para;</a></h2>
 <p>LibreIncu es una iniciativa de soberanía tecnológica y alimentaria desarrollada colaborativamente por AlterMundi y Comunidad, Trabajo y Organización (CTO), junto con diversas organizaciones de la Agricultura Familiar, Campesina e Indígena (AFCI) de la provincia de Córdoba, Argentina. El proyecto busca romper la triple dependencia que enfrenta la AFCI en la producción avícola:</p>
 <ol>
 <li><strong>Dependencia genética</strong>: El "pollito bebé híbrido" utilizado tanto en la industria como por pequeños productores proviene de un oligopolio mundial (Cobb-Vantress y Aviagem), que controlan la genética de todos los pollos industriales.  </li>
@@ -137,238 +842,86 @@
 <li><strong>Dependencia tecnológica</strong>: Las incubadoras comerciales son inaccesibles por su costo o están diseñadas para hobbistas, no para producción familiar.</li>
 </ol>
 <p>Como respuesta a este problema, LibreIncu presenta una incubadora avícola con tecnología de monitoreo y control en línea, diseñada específicamente para las necesidades de la AFCI, permitiendo la recuperación del "saber ancestral" y el desarrollo de genética propia para la transición hacia un modelo agroecológico integral.</p>
-<h2 id="videoequipo-de-desarrollo-libreincu-sistemas-de-monitoreo-y-control"><strong>video:<a href="https://youtu.be/SZky4Ak8hUw">Equipo de Desarrollo LibreIncu. Sistemas de Monitoreo y Control</a></strong></h2>
-<h2 id="hardware"><strong>Hardware</strong></h2>
-<p>La incubadora LibreIncu es el resultado de un cuidadoso proceso de diseño iterativo , buscando crear un dispositivo accesible, eficiente y adaptado a las necesidades específicas de la AFCI. Además, usa componentes disponibles en el mercado y fáciles de reemplazar. </p>
-<h3 id="especificaciones-tecnicas"><strong>Especificaciones técnicas</strong></h3>
-<ul>
-<li><strong>Dimensiones</strong>: 100 cm de altura, 50 cm de ancho y 50 cm de profundidad  </li>
-<li><strong>Capacidad</strong>: 150 huevos en tres bandejas de incubación, con 50 huevos de nacedora  </li>
-<li><strong>Sistema de control térmico</strong>:  </li>
-<li>Resistencia calefactora de 200W ubicada en la base (la misma que una panchera industrial)  </li>
-<li>Sensor BME280 para monitoreo preciso de temperatura, humedad y presión  </li>
-<li>Ventilador de distribución de aire (modelo Turbina Cooler Extractor Fan)  </li>
-<li>Control de temperatura objetivo de promedio 37.8°C  </li>
-<li><strong>Sistema de humidificación</strong>:  </li>
-<li>Microaspersor con sistema de carga automática de agua  </li>
-<li>Presión de trabajo de 3 bar  </li>
-<li>Bomba de nafta (tipo genérica automotor)  </li>
-<li>Control integrado con el sistema de temperatura  </li>
-<li><strong>Sistema de rotación</strong>:  </li>
-<li>Motor de rotación ubicado en la parte superior  </li>
-<li>Sistema de cinta de tracción para movimiento de bandejas  </li>
-<li>Sensores Reed para detectar posiciones extremas (los de alarma)   </li>
-<li>Rotación automática programable  </li>
-<li><strong>Control electrónico</strong>:  </li>
-<li>Microcontrolador ESP32 como cerebro del sistema  </li>
-<li>Conectividad WiFi para control remoto  </li>
-<li>Aplicación LibrePollo para Android  </li>
-<li>Interfaz para visualización de datos históricos en Grafana</li>
-</ul>
-<p>El diseño físico incluye un circuito de convección forzada para una distribución uniforme del calor, con el aire caliente generado por la resistencia ascendiendo por detrás de las bandejas, acumulándose en el techo, y siendo forzado hacia abajo por el ventilador por la parte frontal.</p>
-<p>En las pruebas realizadas, LibreIncu ha logrado un índice de eclosión del 86%, comparable con las mejores marcas comerciales pero con un costo significativamente menor y adaptada específicamente a las necesidades de pequeños productores.</p>
-<h2 id="software"><strong>Software</strong></h2>
-<p>El ecosistema de software de LibreIncu está diseñado para facilitar el monitoreo remoto y control automático de la incubadora, ofreciendo una interfaz intuitiva y accesible para los usuarios.![][image2]</p>
-<p>Cada incubadora emite una red wifi cuyo nombre empieza con el nombre “incu-” seguida de un número. Un usuario que desee controlar su incubadora se puede conectar a ese wifi. Además cada incubadora se conecta a la red wifi para enviar datos por internet a un servidor.</p>
-<p><strong>Firmware de la incubadora</strong> </p>
-<p>El firmware de la incubadora, alojado en la carpeta /src/embedded del <a href="https://github.com/AlterMundi-MonitoreoyControl/Proyecto-Incubadora/tree/main/src/embedded#readme">repositorio</a> del proyecto, es el componente de software que corre directamente en el microcontrolador del sistema de control. Está desarrollado para gestionar de forma autónoma el funcionamiento de la incubadora, manteniendo condiciones ambientales óptimas para el desarrollo de los embriones.</p>
-<p>El firmware utiliza nodemcu y está escrito en lua, un lenguaje sencillo para propiciar la apropiación del software por parte de las comunidades. </p>
-<h3 id="_1"></h3>
-<h3 id="aplicacion-librepollo-para-android"><strong>Aplicación LibrePollo para Android</strong></h3>
-<p>La aplicación móvil LibrePollo permite supervisar y controlar la incubadora desde cualquier dispositivo Android, ofreciendo las siguientes funcionalidades:</p>
-<ul>
-<li>Información en tiempo real sobre el estado de conexión WiFi, estado de rotación, temperatura y humedad actuales.  </li>
-<li>Permite gestionar hasta tres bandejas de incubación, indicando si están vacías o en uso con un ciclo activo con contador de días.  </li>
-<li><strong>Permite ajustar</strong>  temperatura máxima y mínima, niveles de humedad, período de incubación e intervalos de rotación. Además cuenta con un cont<strong>rol manual de rotación</strong>,  y por último informa sobre problemas con el sensor, rotación o conexión a internet.</li>
-</ul>
-<h3 id="_2"></h3>
-<h3 id="sistema-de-registro-y-visualizacion-de-datos-grafana"><strong>Sistema de registro y visualización de datos (Grafana)</strong></h3>
-<p>Complementando la aplicación móvil, LibreIncu integra Grafana para el almacenamiento y visualización de datos históricos:</p>
-<ul>
-<li>Gráficos históricos de temperatura y humedad  </li>
-<li>Análisis de tendencias para optimizar el proceso de incubación  </li>
-<li>Identificación de patrones o problemas en el funcionamiento  </li>
-<li>Acceso mediante conexión WiFi a internet</li>
-</ul>
-<p>Este sistema permite no solo el monitoreo en tiempo real, sino también el análisis posterior para mejora continua del proceso de incubación, facilitando el aprendizaje colectivo y el intercambio de experiencias entre las diferentes organizaciones participantes.</p>
-<h2 id="videolas-voces-de-las-comunidades-que-recibieron-la-libreincu"><strong>video:<a href="https://youtu.be/KnWVigydmrw">Las voces de las comunidades que recibieron la LibreIncu</a></strong></h2>
-<h2 id="impactos-positivos"><strong>Impactos positivos:</strong></h2>
-<p>Ya hay 8 LibreIncus en producción en comunidades de la provincia de Córdoba con las cuáles el equipo de Desarrollo compartió capacitaciones tanto en la parte productiva avícola (manejo de reproductores y huevos fértiles) como en lo tecnológico (manejo del artefacto y software). Las características distintivas de nuestra incubadoras son:</p>
-<p>1) La automatización de la carga de agua y el control de la humedad, ahorran tiempo real de trabajo frente al artefacto.<br />
-2) El monitoreo online, permite hacer el seguimiento de las variables de Tº,Hº y rotación por parte de l@s productor@s a través de un teléfono android de manera remota, ahorrando el tiempo de “ir a ver” la incubadora.<br />
-3) La eficiencia del sistema de control de Hº y Tº y la ubicación de cada bandeja y la nacedora, lograron una eficiencia del 86% de eclosión, igual o superior a las mejores marcas del mercado.<br />
-4) El tamaño y diseño de la LibreIncu está pensado para que una familia con pocos reproductores (15 gallinas y 2 gallos) pueda cargar todas las semanas 50 huevos, en un ciclo continuo de 21 días hasta el nacimiento.<br />
-5) El registro prolijo y completo mediante formularios de las cargas de incubadora y el uso de un  obvoscopio casero (agregar foto) a los 18 días, nos permite diagnosticar con mayor certeza los problemas que pueden surgir en el proceso productivo; cruzando estos datos de nacimientos con el registro histórico de grafana.</p>
-<p><strong>Proyección a dos años</strong></p>
-<p>Nuestro equipo está trabajando en un  Ecosistema Tecnológico para Economía Social y la Producción Sustentable. Un conjunto integrado de sistemas, cada uno enfocado en producciones específicas, que incluye:</p>
-<ul>
-<li>Innovaciones tecnológicas adaptadas a las necesidades locales.  </li>
-<li>Caracterización productiva de los procesos.  </li>
-<li>Curaduría de materiales bibliográficos y manuales técnico-productivos.  </li>
-<li>Definición de requerimientos físicos y estructurales.  </li>
-<li>Interfaces de usuario amigables y accesibles</li>
-</ul>
-<p>Este Ecosistema gira alrededor de las necesidades reales, explicitadas en 1ra persona por los protagonistas de la Economía Social y la Producción Sustentable. Implica proponer soluciones a través de la Innovación tecnológica que sean  social y ambientalmente pertinentes. Cada subsistema se construye y ensambla a partir de un <strong>núcleo común de HardWare o Software</strong>, al cual se van anexando, de manera modular, una diversidad de complementos, capas o funcionalidades (físicas o de SW) acordes a las necesidades específicas de cada producción o contexto. Estos subsistemas se integran de manera complementaria, en un <strong>sistema mayor</strong>, que no solo da respuestas a un producción o cadena específica; sino que intenta acompañar al sujeto de la economía y la producción social. La <strong>modularidad</strong> facilita la <strong>adaptación a diferentes realidades productivas</strong> y promueve la <strong>apropiación tecnológica</strong> por parte los trabajadores y los productores.</p>
-<h3 id="objetivos-a-corto-plazo"><strong>Objetivos a corto plazo</strong></h3>
-<ol>
-<li><strong>Fortalecimiento técnico-productivo</strong>: Desarrollo de un programa estructurado de capacitación y acompañamiento a las organizaciones de la AFCI para el manejo integral de la producción avícola agroecológica.  </li>
-<li><strong>Perfeccionamiento tecnológico</strong>: Mejora continua del diseño y funcionalidad de la incubadora LibreIncu basado en la retroalimentación de usuarios y validación técnica del INTI.  </li>
-<li><strong>Desarrollo genético autónomo</strong>: Establecimiento de planteles reproductores en cada organización mediante la incorporación de gallos de razas pesadas y gallinas criollas regionales.  </li>
-<li><strong>Alimentación agroecológica</strong>: Formulación, prueba y sistematización de dietas agroecológicas específicas para cada etapa productiva avícola.  </li>
-<li><strong>Expansión tecnológica</strong>: Adaptación del sistema de monitoreo y control LibreIncu para su aplicación en plantineras hortícolas, como primer paso hacia la expansión del ecosistema tecnológico.</li>
-</ol>
-<h3 id="video-incubadoras-altermundi"><strong>video <a href="https://www.youtube.com/watch?v=WrC1Y-ACtMo">Incubadoras AlterMundi</a></strong></h3>
-<h3 id="vision-a-largo-plazo"><strong>Visión a largo plazo</strong></h3>
-<p>En el largo plazo, el proyecto aspira a generar una transformación profunda en los sistemas productivos avícolas de la AFCI en Argentina, desarrollando un modelo replicable que gradualmente pueda extenderse a otras regiones y escalas.</p>
-<p>Se busca que las organizaciones participantes desarrollen completa autonomía en la producción avícola, desde el manejo genético para la producción de sus propios pollitos con características genéticas adaptadas, hasta la producción de carne de pollo agroecológica que se comercialice en mercados locales.</p>
-<p>Esta visión de largo plazo implica establecer las bases para un cambio de paradigma, demostrando la viabilidad de sistemas productivos que no dependan de antibióticos preventivos, dietas industriales o genética controlada por corporaciones. A través de la combinación de tecnología apropiada y conocimiento agroecológico, se busca construir sistemas alimentarios más justos, resilientes y soberanos, donde la tecnología sirva a las necesidades de los pueblos.</p>
-<p>Por otro lado, la construcción del  Ecosistema Tecnológico para Economía Social y la Producción Sustentable, implica desafíos metodológicos y técnicos, que sigan poniendo a los usuarios finales (los productores o trabajadores), en el centro de los procesos de I\&amp;D, respondiendo a demandas y necesidades reales, desde un paradigma social y ambientalmente justo, que promueva prácticas transformadoras y sustentables.</p>
-<p><strong>Anexo</strong>  enlaces para:  </p>
-<p>a)Notas y artículos periodísticos<br />
- b)videos de difusión.<br />
- c) Artículos académicos<br />
- d) Materiales para el Usuario Final</p>
-<p>a)<strong>Artículos y notas</strong></p>
-<p>Tiempo Argentino.Tiempo Rural.</p>
-<p>Crean “LibreIncu”, una incubadora para familias productoras que funciona con software libre<br />
-<a href="https://bit.ly/LibreIncu">https://bit.ly/LibreIncu</a></p>
-<p>Pagina 12.</p>
-<p>Problemas en la salud, maltrato animal y pérdida de soberanía. ¿Qué hacer con la industria avícola?<br />
-<a href="https://www.pagina12.com.ar/798691-que-hacer-con-la-industria-avicola">https://www.pagina12.com.ar/798691-que-hacer-con-la-industria-avicola</a></p>
-<p>Multimedio Comechingones: </p>
-<p>INCUBADORAS LIBRES Y LA SOBERANÍA ALIMENTARIA Y TECNOLÓGICA.<br />
-<a href="https://www.youtube.com/watch?v=XAIEJV1IsmM">https://www.youtube.com/watch?v=XAIEJV1IsmM</a></p>
-<p>Radio Pueblo 103.3</p>
-<p>Somos Tierra (programa) 07/03<br />
- “LibreIncu”, una incubadora para familias productoras que funciona con software libre.<br />
-<a href="https://www.facebook.com/100064102022746/posts/pfbid0N8CtLHdo2AVj12pVsAtcoeShCmByB2GCyXqmLqw75aoo8GYHFhkMTCCCVQQF8PBvl/?app=fbl">https://www.facebook.com/100064102022746/posts/pfbid0N8CtLHdo2AVj12pVsAtcoeShCmByB2GCyXqmLqw75aoo8GYHFhkMTCCCVQQF8PBvl/?app=fbl</a></p>
-<p>CDM Noticias: </p>
-<p>👉🏽En una entrevista radial con CDM Noticias, Fabricio Puzio, integrante de la organización rural CTO y uno de los impulsores del proyecto, brindó detalles del proyecto<br />
-<a href="https://cdmnoticias.com.ar/2025/03/11/libreincu-una-incubadora-de-pollos-con-software-libre-para-la-agricultura-familiar-en-cordoba/">https://cdmnoticias.com.ar/2025/03/11/libreincu-una-incubadora-de-pollos-con-software-libre-para-la-agricultura-familiar-en-cordoba/</a></p>
-<p>b) <strong>Videos</strong></p>
-<ol>
-<li>
-<p>En este video encontrarán las voces de las comunidades que recibieron la incubadora en 1ra persona:<br />
-    Youtube: <a href="https://youtu.be/KnWVigydmrw">https://youtu.be/KnWVigydmrw</a><br />
-    Drive (para descarga archivo):<br />
-<a href="https://drive.google.com/file/d/1XJGJvUBiZXpjTJCaMYPYS3Le8TjS4YHT/view?usp=drive_link">https://drive.google.com/file/d/1XJGJvUBiZXpjTJCaMYPYS3Le8TjS4YHT/view?usp=drive_link</a></p>
-</li>
-<li>
-<p>Este video resume la actividad de febrero de 2025, dónde se realizó una capacitación técnica sobre el uso de la incubadora y su entrega a las comunidades:<br />
-    Youtube: <a href="https://youtu.be/x1D_cCt7HYg">https://youtu.be/x1D_cCt7HYg</a><br />
-    Drive (archivo):<br />
-<a href="https://drive.google.com/file/d/1NNPJ5_CfbWtDd18YyunTMB_yW_l8wr9t/view?usp=drive_link">https://drive.google.com/file/d/1NNPJ5_CfbWtDd18YyunTMB_yW_l8wr9t/view?usp=drive_link</a></p>
-</li>
-<li>
-<p>En este video, encontrarán las voces del Equipo de Altermundi, reflexionando sobre el proceso de desarrollo.<br />
-    Youtube: <a href="https://youtu.be/SZky4Ak8hUw">https://youtu.be/SZky4Ak8hUw</a><br />
-    Drive (archivo):<br />
-<a href="https://drive.google.com/file/d/1BhJ7BwKUeTCceVNzBBIgxEsvleegejvH/view?usp=drive_link">https://drive.google.com/file/d/1BhJ7BwKUeTCceVNzBBIgxEsvleegejvH/view?usp=drive_link</a></p>
-</li>
-<li>
-<p>En este video encontrarán testimonios sobre lo que implica el proyecto de desarrollo para las organizaciones involucradas.<br />
-    Youtube: <a href="https://youtu.be/OzdKqgwdBYY">https://youtu.be/OzdKqgwdBYY</a></p>
-</li>
-<li>
-<p>En este video encontrarán una presentación técnica Incubadora, con sus componentes:<br />
-<a href="https://www.youtube.com/watch?v=WrC1Y-ACtMo">https://www.youtube.com/watch?v=WrC1Y-ACtMo</a><br />
-    Corte cuadrado 1:<br />
-<a href="https://drive.google.com/file/d/1Y_UQ-bno3-HFeVKtA_xg6CsesUtA-4hE/view?usp=drive_link">https://drive.google.com/file/d/1Y_UQ-bno3-HFeVKtA_xg6CsesUtA-4hE/view?usp=drive_link</a><br />
-    Corte cuadrado 2:<br />
-<a href="https://drive.google.com/file/d/13rHx7xk9e1rThg5PIM3QHikm3YS5sNPg/view?usp=drive_link">https://drive.google.com/file/d/13rHx7xk9e1rThg5PIM3QHikm3YS5sNPg/view?usp=drive_link</a></p>
-</li>
-<li>
-<p>En este video encontrarán testimonios sobre la 1er Capacitación realizada con las comunidades sobre manejo productivo de huevos fértiles e incubadora.<br />
-<a href="https://youtu.be/IfGGvOIJ1b8">https://youtu.be/IfGGvOIJ1b8</a><br />
-<a href="https://drive.google.com/file/d/1ajWQofPJQxNfXo5LtOdFrOzkCoTbWGiC/view?usp=sharing">https://drive.google.com/file/d/1ajWQofPJQxNfXo5LtOdFrOzkCoTbWGiC/view?usp=sharing</a></p>
-</li>
-</ol>
-<p><strong>c) Artículos Académicos</strong></p>
-<p>1)X Congreso Latinoamericano de Agroecología - Asunciónd el Paraguay.<br />
- Innovación tecnológica y productiva en la cadena avícola para la agricultura familiar,campesina e indígena (AFCI). Córdoba-Argentina. Fabricio Puzio.<br />
-<a href="https://indico.una.py/event/3/contributions/772/">https://indico.una.py/event/3/contributions/772/</a></p>
-<p>d)<strong>Materiales para usario Final:</strong></p>
-<p>1) <a href="https://hackmd.io/@pablomonte/Documentacion_LibreIncu">https://hackmd.io/@pablomonte/Documentacion_LibreIncu</a></p></div>
-            </div>
-        </div>
+<p><a href="https://youtu.be/SZky4Ak8hUw"><img alt="Equipo de Desarrollo LibreIncu. Sistemas de Monitoreo y Control" src="https://img.youtube.com/vi/SZky4Ak8hUw/0.jpg" /></a></p>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/AlterMundi-MonitoreoyControl" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.indexes", "navigation.tabs", "search.highlight", "search.share", "content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-05-07 15:07:00.451730+00:00
--->
